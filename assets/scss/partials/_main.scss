@@ -13,8 +13,10 @@ img {
 
 .hero {
   background-color: $purple;
-
   .container {
+    & > *:first-child {
+      position: relative;
+    }
     & > * {
       width: $half-size;
     }

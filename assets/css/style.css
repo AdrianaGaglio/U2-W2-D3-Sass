@@ -315,6 +315,9 @@ img {
 .hero {
   background-color: #640fc5;
 }
+.hero .container > *:first-child {
+  position: relative;
+}
 .hero .container > * {
   width: 50%;
 }
