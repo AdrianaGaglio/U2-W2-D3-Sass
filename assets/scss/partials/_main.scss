@@ -36,10 +36,7 @@ img {
 
 .content {
   .container {
-    @include grid(7);
-    // & > div {
-    //   width: $quarter-size;
-    // }
+    @include grid(4);
   }
   h3 {
     @include title-h3;

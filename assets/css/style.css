@@ -343,6 +343,9 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+.content .container > * {
+  width: 25%;
+}
 .content h3 {
   font-size: 3rem;
   color: rgba(244, 244, 244, 0.6392156863);
