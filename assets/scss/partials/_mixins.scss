@@ -54,8 +54,43 @@
   object-fit: cover;
 }
 
-@mixin floating($radius: 30px, $shadow: #640fc548, $border: #640fc548) {
+@mixin floating($radius: 30px, $shadow: #640fc548, $border: 1px solid transparent) {
   border-radius: $radius;
   box-shadow: $shadow;
-  border: 1.5px solid $border;
+  border: $border;
+}
+
+@mixin grid($value) {
+  display: flex;
+  flex-wrap: wrap;
+  @if $value == 1 {
+    & > * {
+      width: 100%;
+    }
+  } @else if $value == 2 {
+    & > * {
+      width: 50%;
+    }
+  } @else if $value == 3 {
+    & > * {
+      width: 33.333%;
+    }
+  } @else if $value == 4 {
+    & > * {
+      width: 25%;
+    }
+  } @else if $value == 5 {
+    & > * {
+      width: 20%;
+    }
+  } @else if $value == 6 {
+    & > * {
+      width: 16.666%;
+    }
+  } @else {
+    & > * {
+      $dinamic: calc(100 / $value);
+      // width: #{$dinamic}+'%';
+    }
+  }
 }
