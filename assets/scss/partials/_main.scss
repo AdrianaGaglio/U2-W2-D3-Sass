@@ -1,0 +1,45 @@
+body {
+  background-color: $body;
+}
+
+.container {
+  @include content;
+  @include flexAlignCenter;
+}
+
+img {
+  @include images;
+}
+
+.hero {
+  background-color: $purple;
+
+  .container {
+    & > * {
+      width: $half-size;
+    }
+    & > *:nth-child(2) {
+      text-align: center;
+    }
+    h1 {
+      @include title-big;
+    }
+    p {
+      margin-bottom: $general-margin;
+      @include paragraph;
+    }
+  }
+}
+
+.content {
+  .container {
+    flex-wrap: wrap;
+    & > div {
+      width: $quarter-size;
+    }
+  }
+  h3 {
+    @include title-h3;
+    text-align: center;
+  }
+}

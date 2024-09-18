@@ -1,0 +1,349 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.padding-inline-sm {
+  padding-inline: 0.25rem;
+}
+
+.padding-inline-normal {
+  padding-inline: 0.5rem;
+}
+
+.padding-inline-md {
+  padding-inline: 1rem;
+}
+
+.padding-inline-lg {
+  padding-inline: 1.5rem;
+}
+
+.padding-inline-xl {
+  padding-inline: 2.5rem;
+}
+
+.padding-inline-xxl {
+  padding-inline: 5rem;
+}
+
+.padding-block-sm {
+  padding-block: 0.25rem;
+}
+
+.padding-block-normal {
+  padding-block: 0.5rem;
+}
+
+.padding-block-md {
+  padding-block: 1rem;
+}
+
+.padding-block-lg {
+  padding-block: 1.5rem;
+}
+
+.padding-block-xl {
+  padding-block: 2.5rem;
+}
+
+.padding-block-xxl {
+  padding-block: 5rem;
+}
+
+.margin-inline-sm {
+  margin-inline: 0.25rem;
+}
+
+.margin-inline-normal {
+  margin-inline: 0.5rem;
+}
+
+.margin-inline-md {
+  margin-inline: 1rem;
+}
+
+.margin-inline-lg {
+  margin-inline: 1.5rem;
+}
+
+.margin-inline-xl {
+  margin-inline: 2.5rem;
+}
+
+.margin-inline-xxl {
+  margin-inline: 5rem;
+}
+
+.margin-block-sm {
+  margin-block: 0.25rem;
+}
+
+.margin-block-normal {
+  margin-block: 0.5rem;
+}
+
+.margin-block-md {
+  margin-block: 1rem;
+}
+
+.margin-block-lg {
+  margin-block: 1.5rem;
+}
+
+.margin-block-xl {
+  margin-block: 2.5rem;
+}
+
+.margin-block-xxl {
+  margin-block: 5rem;
+}
+
+.buttons .button {
+  display: inline-block;
+  text-decoration: none;
+  color: #f4f4f4;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+.buttons .button:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.button-blue {
+  background-color: #0e6cff;
+}
+
+.button-orange {
+  background-color: #ff8700;
+}
+
+.button-green {
+  background-color: #4caf50;
+}
+
+header {
+  padding: 2rem;
+}
+
+nav {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  width: 150px;
+}
+
+ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f4f4f4;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+body {
+  background-color: #919191;
+}
+
+.container {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero {
+  background-color: #640fc5;
+}
+.hero .container > * {
+  width: 50%;
+}
+.hero .container > *:nth-child(2) {
+  text-align: center;
+}
+.hero .container h1 {
+  font-size: 5rem;
+  color: rgba(244, 244, 244, 0.6392156863);
+  margin-bottom: 2rem;
+  font-family: "Inria", sans-serif;
+}
+.hero .container p {
+  margin-bottom: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #f4f4f4;
+}
+
+.content .container {
+  flex-wrap: wrap;
+}
+.content .container > div {
+  width: 25%;
+}
+.content h3 {
+  font-size: 3rem;
+  color: rgba(244, 244, 244, 0.6392156863);
+  margin-bottom: 2rem;
+  font-family: "Inria", sans-serif;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

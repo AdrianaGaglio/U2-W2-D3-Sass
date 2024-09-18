@@ -1,0 +1,61 @@
+@mixin content {
+  width: $content-size;
+  margin-inline: auto;
+}
+
+@mixin inlines {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin titles {
+  color: $heading-color;
+  margin-bottom: $general-margin;
+  font-family: $headings-font;
+}
+
+@mixin title-big {
+  font-size: $big-text-size;
+  @include titles;
+}
+
+@mixin title-h3 {
+  font-size: 3rem;
+  @include titles;
+}
+
+@mixin paragraph {
+  font: {
+    family: $text-font;
+    size: $medium-text-size;
+  }
+  color: $text-color;
+}
+
+@mixin links {
+  display: inline-block;
+  text-decoration: none;
+  color: $text-color;
+  font: {
+    family: $text-font;
+    weight: 500;
+    size: $normal-text-size;
+  }
+}
+
+@mixin images {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@mixin floating($radius: 30px, $shadow: #640fc548, $border: #640fc548) {
+  border-radius: $radius;
+  box-shadow: $shadow;
+  border: 1.5px solid $border;
+}

@@ -1,0 +1,71 @@
+// paddings
+$general-padding: 2rem;
+$padding-xy: 0.5rem 1rem;
+
+$paddings-inline: (
+  "inline-sm": 0.25rem,
+  "inline-normal": 0.5rem,
+  "inline-md": 1rem,
+  "inline-lg": 1.5rem,
+  "inline-xl": 2.5rem,
+  "inline-xxl": 5rem
+);
+
+$paddings-block: (
+  "block-sm": 0.25rem,
+  "block-normal": 0.5rem,
+  "block-md": 1rem,
+  "block-lg": 1.5rem,
+  "block-xl": 2.5rem,
+  "block-xxl": 5rem
+);
+@each $padding, $space in $paddings-inline {
+  .padding-#{$padding} {
+    padding-inline: $space;
+  }
+}
+
+@each $padding, $space in $paddings-block {
+  .padding-#{$padding} {
+    padding-block: $space;
+  }
+}
+
+// margins
+$general-margin-sm: 1rem;
+$general-margin: 2rem;
+
+$margins-inline: (
+  "inline-sm": 0.25rem,
+  "inline-normal": 0.5rem,
+  "inline-md": 1rem,
+  "inline-lg": 1.5rem,
+  "inline-xl": 2.5rem,
+  "inline-xxl": 5rem
+);
+
+$margins-block: (
+  "block-sm": 0.25rem,
+  "block-normal": 0.5rem,
+  "block-md": 1rem,
+  "block-lg": 1.5rem,
+  "block-xl": 2.5rem,
+  "block-xxl": 5rem
+);
+
+@each $margin, $space in $margins-inline {
+  .margin-#{$margin} {
+    margin-inline: $space;
+  }
+}
+
+@each $margin, $space in $margins-block {
+  .margin-#{$margin} {
+    margin-block: $space;
+  }
+}
+
+// sizes
+$quarter-size: 25%;
+$half-size: 50%;
+$content-size: 80%;

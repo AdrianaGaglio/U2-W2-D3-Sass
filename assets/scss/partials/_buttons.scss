@@ -1,0 +1,21 @@
+.buttons {
+  .button {
+    @include links;
+    border-radius: 10px;
+    &:not(:last-of-type) {
+      margin-right: $general-margin-sm;
+    }
+  }
+}
+
+$buttons: (
+  "blue": $blue,
+  "orange": $orange,
+  "green": $green
+);
+
+@each $col-name, $color in $buttons {
+  .button-#{$col-name} {
+    background-color: $color;
+  }
+}
