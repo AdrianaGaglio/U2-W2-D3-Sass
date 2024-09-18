@@ -1,0 +1,10 @@
+@keyframes fadeInAnimation () {
+  from {
+    translate: 0 -110%;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
