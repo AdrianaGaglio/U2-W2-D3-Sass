@@ -261,16 +261,6 @@ table {
   background-color: #4caf50;
 }
 
-@keyframes fadeInAnimation () {
-  from {
-    translate: 0 -110%;
-    opacity: 0;
-  }
-  to {
-    translate: 0 0;
-    opacity: 1;
-  }
-}
 header {
   padding: 2rem;
 }
@@ -339,9 +329,6 @@ img {
   color: rgba(244, 244, 244, 0.6392156863);
   margin-bottom: 2rem;
   font-family: "Inria", sans-serif;
-  translate: 0 -110%;
-  opacity: 0;
-  animation: fadeIn 2s 300ms forwards;
 }
 .hero .container p {
   margin-bottom: 2rem;
